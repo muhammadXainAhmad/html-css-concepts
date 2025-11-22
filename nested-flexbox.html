@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nested Flexbox</title>
+    <style>
+        .flexbox {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            margin-bottom: 50px;
+        }
+
+        .column1 {
+            background-color: lightpink;
+            width: 100px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1 {
+            background-color: black;
+            color: white;
+        }
+
+        .column2 {
+            background-color: lightblue;
+            width: 200px;
+        }
+
+        .column2flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body style="padding-bottom: 1000px;padding-left: 50px;">
+    <p>PRACTICE 1</p>
+    <div class="flexbox">
+        <div class="column1">
+            <div class="item1">item1</div>
+        </div>
+        <div class="column2"></div>
+    </div>
+
+    <p>PRACTICE 2</p>
+    <div class="flexbox">
+        <div style="background-color: lightpink;width: 100px;"></div>
+        <div style="background-color: lightblue;width: 200px;">
+            <div>row1</div>
+            <div class="column2flex">
+                <div class="item1">row2</div>
+                <div class="item1">row2</div>
+            </div>
+        </div>
+    </div>
+
+    <p>PRACTICE 3</p>
+    <style>
+        p {
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .container {
+            display: inline-block;
+            border: none;
+            border-radius: 2px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 14px;
+            padding-right: 14px;
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+
+        .image {
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .title-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 8px;
+        }
+
+        .heading {
+            color: grey;
+            padding-bottom: 14px;
+        }
+
+        .title,
+        .subtitle {
+            font-weight: bold;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            padding-left: 8px;
+        }
+
+        .message {
+            font-size: 12px;
+            color: grey;
+            padding-left: 8px;
+            line-height: 1.5;
+        }
+
+        .time {
+            color: grey;
+            font-size: 10px;
+        }
+    </style>
+
+    <div class="container">
+        <p class="heading">ALL INBOXES</p>
+        <div class=" row">
+            <img class="image" src="../../assets-practice/cat1.jpeg">
+            <div style="flex: 1;">
+                <div class="title-row">
+                    <p class="title">Chewy Promotions</p>
+                    <p class="time">4:58 PM</p>
+                </div>
+                <p class="subtitle">Biggest sales of the year!</p>
+                <p class="message">Hey there! We're writing to tell you about our ...</p>
+            </div>
+        </div>
+
+        <div class=" row">
+            <img class="image" src="../../assets-practice/cat2.jpeg">
+            <div style="flex: 1;">
+                <div class="title-row">
+                    <p class="title">Best Buy</p>
+                    <p class="time">11:53 AM</p>
+                </div>
+                <p class="subtitle">Your Best Buy eReceipt</p>
+                <p class="message">Thank your for shopping at Best Buy!</p>
+            </div>
+        </div>
+
+        <div class=" row">
+            <img class="image" src="../../assets-practice/cat3.jpeg">
+            <div style="flex: 1;">
+                <div class="title-row">
+                    <p class="title">Netflix</p>
+                    <p class="time">3:05 AM</p>
+                </div>
+                <p class="subtitle">Here's what's coming soon to netflix!</p>
+                <p class="message">Brand new movies and shows, old favourites...</p>
+            </div>
+        </div>
+    </div>
+
+    <p>PRACTICE 4</p>
+    <style>
+        .twitter-row {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .twitter-image {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+        .twitter-name {
+            color: black;
+            font-weight: 600;
+        }
+
+        .twitter-handle {
+            color: grey;
+        }
+
+        .tweet {
+            padding-bottom: 12px;
+        }
+
+        .link-container {
+            display: flex;
+            flex-direction: row;
+            border: solid;
+            border-width: 1px;
+            border-color: grey;
+            border-radius: 8px;
+            width: 350px;
+        }
+
+        .left-container {
+            background-color: lightgrey;
+            flex: 1;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .right-container {
+            background-color: whitesmoke;
+            flex: 2;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .content-column {
+            padding-left: 6px;
+        }
+
+        .twitter-container {
+            width: 420px;
+            margin-bottom: 25px;
+        }
+    </style>
+
+    <div class="twitter-container">
+        <div class="twitter-row">
+            <img class="twitter-image" src="../../assets-practice/cat2.jpeg">
+            <div class="content-column">
+                <p class="twitter-name">supersimple.dev <span class="twitter-handle">@SuperSimpleDev</span></p>
+                <p class="tweet">What is backend development? A complete overview. New video is up.</p>
+                <div class="link-container">
+                    <div class="left-container"></div>
+                    <div class="right-container">
+                        <p class="twitter-handle">youtube.com</p>
+                        <p style="padding-top: 6px;">Backend web development - a complete overview (2021)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="twitter-container">
+        <div class="twitter-row">
+            <img class="twitter-image" src="../../assets-practice/cat2.jpeg">
+            <div class="content-column">
+                <p class="twitter-name">supersimple.dev <span class="twitter-handle">@SuperSimpleDev</span></p>
+                <p class="tweet">What is backend development? A complete overview. New video is up.</p>
+                <div class="link-container">
+                    <div class="left-container"></div>
+                    <div class="right-container">
+                        <p class="twitter-handle">youtube.com</p>
+                        <p style="padding-top: 6px;">Backend web development - a complete overview (2021)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

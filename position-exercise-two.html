@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Position Exercise Two</title>
+    <style>
+        .container {
+            background-color: grey;
+            display: inline-block;
+            position: relative;
+        }
+
+        .sale-tag {
+            font-family: Arial;
+            font-size: 14px;
+            background-color: black;
+            color: white;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-right: 16px;
+            padding-left: 16px;
+        }
+
+        .bottom-overlay {
+            background-color: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            top: 70%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn {
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 16px;
+            padding-left: 16px;
+            border-style: solid;
+            border-color: black;
+            border-width: 2px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <img src="../../assets-practice/shirt.png" style="width: 500px;height: 500px;">
+        <div class="sale-tag">20% OFF</div>
+        <div class="bottom-overlay"> <button class="btn">Add to Cart</button></div>
+    </div>
+</body>
+
+</html>
